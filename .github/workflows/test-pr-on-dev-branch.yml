@@ -6,8 +6,7 @@ on:
 
 jobs:
   say_hello:
-    if: {{github.}}
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     env:
       FIRST_NAME: Jaehwan
     steps:
