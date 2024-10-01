@@ -8,14 +8,13 @@ jobs:
   say_hello:
     runs-on: ubuntu-latest
     env:
-      FIRST_NAME: Jaehwan
+      FIRST_NAME: Jaehwan1
     steps:
       - env:
           LAST_NAME: Hyun
         run: |
           echo "My first name is $FIRST_NAME"
-      - run: echo "My last name is $LAST_NAME"
+          echo "My last name is $LAST_NAME"
       - run: echo "My full name is $FIRST_NAME $LAST_NAME"
-        with:
-          FIRST_NAME: JAEHWAN
-          LAST_NAME: HYUN
+        env:
+          FIRST_NAME: Jaehwan2
