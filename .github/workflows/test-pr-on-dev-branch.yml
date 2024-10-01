@@ -1,10 +1,8 @@
 name: Test PR on dev branch
 run-name: Testing PR by ${{ github.actor }}
 on:
-  pull_request_target:
-    branches:
-      - dev
-      - develop
+  pull_request:
+    branches: [dev, develop]
 jobs:
   say_hello:
     runs-on: ubuntu_latest
