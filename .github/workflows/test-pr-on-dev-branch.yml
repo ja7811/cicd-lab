@@ -1,7 +1,7 @@
 name: Test PR on dev branch
 run-name: Testing PR by ${{ github.actor }}
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - dev
       - develop
